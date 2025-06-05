@@ -3,8 +3,6 @@
 import logging
 import asyncio
 import signal
-
-# Thêm 'Bot' vào đây
 from telegram import Update, Bot
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from telegram.request import HTTPXRequest
