@@ -6,15 +6,17 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from telegram import Bot, Update
 from telegram.request import HTTPXRequest
 
+import config
+
 # Cấu hình cơ bản
-TOKEN = "7549149886:AAFazCTmbo9L4hH8iL1zcIovSOpB8_pnWPQ"  # Sử dụng token thực tế của bạn
-CHAT_ID = "1612458483"  # Sử dụng chat ID thực tế của bạn
+TOKEN = config.BOT_TOKEN # Sử dụng token thực tế của bạn
+CHAT_ID = config.CHAT_ID  # Sử dụng chat ID thực tế của bạn
 
 # Cấu hình proxy
-PROXY_LOGIN = 'EAzGMRSu'
-PROXY_PASSWORD = 'ZiNQDnXh'
-PROXY_IP_HTTP = '85.142.0.244'
-PROXY_PORT_HTTP = '62479'
+PROXY_LOGIN = config.PROXY_LOGIN
+PROXY_PASSWORD = config.PROXY_PASSWORD
+PROXY_IP_HTTP = config.PROXY_IP_HTTP
+PROXY_PORT_HTTP = config.PROXY_PORT_HTTP
 PROXY_URL = f'socks5://{PROXY_LOGIN}:{PROXY_PASSWORD}@{PROXY_IP_HTTP}:{PROXY_PORT_HTTP}'
 VERIFY_SSL = True
 

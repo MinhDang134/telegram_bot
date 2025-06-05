@@ -2,3 +2,5 @@
 my_user_session.session
 .idea
 .gitignore
+config.py
+.pyc
