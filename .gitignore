@@ -1,0 +1,4 @@
+.venv
+my_user_session.session
+.idea
+.gitignore
